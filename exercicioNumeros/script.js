@@ -4,6 +4,8 @@ var input = document.querySelector("#primeiro-input");
 console.dir(input.value);
 
 var button = document.querySelector("#btn");
+var regraDeContagem = 3;
+var clickDoUsuario = 0;
 
 button.addEventListener("click", function(){
   var value = input.value;
@@ -19,7 +21,16 @@ button.addEventListener("click", function(){
   }else{
     alert("Você errou");
   }
+
+  clickDoUsuario = clickDoUsuario + 1;
+  console.log(clickDoUsuario);
+  if(clickDoUsuario >= 3){
+    button.disabled = true;
+    input.disabled = true;
+  }
 });
+
+
 //a função como parâmetro será executada toda vez que o evento ocorrer no elemento input
 input.addEventListener("keyup", function(){
  var value = input.value;
@@ -31,5 +42,4 @@ if(window.isNaN(value)){
 
 //checa se o botão realmente existe para executar as ações
 //if(btn !== null){
-
 //}
