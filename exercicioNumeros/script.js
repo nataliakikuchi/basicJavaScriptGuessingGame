@@ -18,8 +18,13 @@ button.addEventListener("click", function(){
   }
   if(value == numeroSorteado){
     alert("Você acertou");
+    clickDoUsuario = 0;
+    input.value = "";
+    input.focus();
   }else{
     alert("Você errou");
+    input.value = "";
+    input.focus();
   }
 
   clickDoUsuario = clickDoUsuario + 1;
@@ -43,3 +48,12 @@ if(window.isNaN(value)){
 //checa se o botão realmente existe para executar as ações
 //if(btn !== null){
 //}
+
+var tryAgain = document.querySelector("#reset");
+tryAgain.addEventListener("click", function(){
+  if(clickDoUsuario == 3){
+  clickDoUsuario = 0;
+  button.disabled = false;
+  input.disabled = false;
+}
+})
