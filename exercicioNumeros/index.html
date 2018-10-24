@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jogo da Adivinhação</title>
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stars.css"
   </head>
   <body>
+    <section class="all-stars">
+      <div class="star-1 stars"></div>
+      <div class="star-2 stars"></div>
+      <div class="star-3 stars"></div>
+      <div class="star-4 stars"></div>
+      <div class="star-5 stars"></div>
+      <div class="star-6 stars"></div>
+      <div class="star-7 stars"></div>
+      <div class="star-8 stars"></div>
+    </section>
     <section>
-    <div>
-      <p>Placar</p>
-      <ul>
-        <li>Você já jogou X </li>
-        <li>Você ganhou X</li>
-        <li>Você perdeu X</li>
-      </ul>
-    </div>
-  </section>
+      <div class="score">
+        <p>Placar</p>
+        <ul class="first-list">
+          <li>Você já jogou X vezes.</li>
+          <li>Você ganhou X vezes.</li>
+          <li>Você perdeu X vezes.</li>
+        </ul>
+      </div>
+    </section>
     <section>
-    <h1>Jogo da Adivinhação</h1>
-    <p>Você tem três tentativas para acertar o número escolhido pelo nosso jogo!</p>
-  </section>
-  <section>
-    <input id="primeiro-input" type="text" placeholder="Digite um número">
-    <button id="btn">Validar</button>
-    <button id="reset">Tentar novamente</button>
-  </section>  
+      <div class="title-game">
+        <h1>Jogo da Adivinhação</h1>
+        <p>Você tem três tentativas para acertar o número oculto!</p>
+      </div>
+    </section>
+    <section class="playing">
+      <div class="main-game">
+        <input id="first-input" type="text" placeholder="Digite um número">
+      </div>
+      <div class="buttons">
+        <button id="btn-play">Jogar</button>
+        <button id="btn-reset">Tentar novamente</button>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

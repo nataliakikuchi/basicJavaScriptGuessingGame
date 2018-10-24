@@ -1,0 +1,28 @@
+body {
+  font-family: 'Mali', cursive;
+  background-image: linear-gradient(black, #000099, #66c2ff, #f7b9b9, #ffcccc);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 12px;
+
+}
+
+.title-game {
+  text-align: center;
+}
+
+.title-game p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.playing {
+  text-align: center;
+}
+
+.main-game {
+  display: inline-block;
+}
