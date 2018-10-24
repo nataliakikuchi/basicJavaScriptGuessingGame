@@ -13,6 +13,14 @@
     alert("Insira um número");
   }
 
+  function acertou() {
+    alert("Você acertou");
+  }
+
+  function errou() {
+    alert("Você errou");
+  }
+
   button.addEventListener("click", function(){
     var value = input.value;
 
@@ -21,12 +29,12 @@
       return;
     }
     if(value == numeroSorteado){
-      alert("Você acertou");
+      acertou();
       clickDoUsuario = 0;
       input.value = "";
       input.focus();
     }else{
-      alert("Você errou");
+      errou();
       input.value = "";
       input.focus();
     }
