@@ -25,6 +25,8 @@ h1 {
 
 .playing {
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .main-game {
@@ -44,5 +46,5 @@ h1 {
 #first-input::placeholder {
   font-family: 'Mali', cursive;
   font-weight: 500;
-  
+
 }
