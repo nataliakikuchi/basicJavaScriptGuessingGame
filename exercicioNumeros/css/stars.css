@@ -1,9 +1,13 @@
 .all-stars {
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .stars {
+    position: absolute;
     background-color: white;
+    opacity: 0.8;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -11,29 +15,64 @@
   }
 
   .star-1 {
-    margin-top: 15%;
-    margin-left: 60%;
+    margin-top: -12%%;
+    margin-left: 85%;
     animation-duration: 1s;
     animation-name: twinkle;
   }
 
   .star-2 {
-    margin-top: 25%;
+    margin-top: 6%;
     margin-left: 25%;
     animation-duration: 2s;
     animation-name: twinkle;
   }
 
   .star-3 {
-   margin-top: 10%;
-   margin-left: 50%;
-   animation-duration: 1.4s;
+   margin-top: 30%;
+   margin-left: 30%;
+   animation-duration: 1s;
    animation-name: twinkle
  }
+
+ .star-4 {
+  margin-top: 11%;
+  margin-left: 60%;
+  animation-duration: 1.4s;
+  animation-name: twinkle
+}
+
+.star-5 {
+ margin-top: 20%;
+ margin-left: 10%;
+ animation-duration: 3s;
+ animation-name: twinkle
+}
+
+.star-6 {
+ margin-top: 30%;
+ margin-left: 90%;
+ animation-duration: 4s;
+ animation-name: twinkle
+}
+
+.star-7 {
+ margin-top: -2%;
+ margin-left: 40%;
+ animation-duration: 1.4s;
+ animation-name: twinkle
+}
+
+.star-8 {
+ margin-top: 2%;
+ margin-left: 0%;
+ animation-duration: 3s;
+ animation-name: twinkle
+}
 
   @keyframes twinkle {
     20% {
       transform: scale(0.5);
-      opacity: 0.5;
+      opacity: 0.3;
     }
   }

@@ -1,7 +1,10 @@
 body {
+  position: relative;
   font-family: 'Mali', cursive;
   background-image: linear-gradient(black, #000099, #66c2ff, #f7b9b9, #ffcccc);
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -17,6 +20,7 @@ h1 {
 .title-game p {
   font-size: 20px;
   margin-top: 10px;
+  margin-bottom: 100px;
 }
 
 .playing {
@@ -25,4 +29,20 @@ h1 {
 
 .main-game {
   display: inline-block;
+}
+
+#first-input {
+  background-color: transparent;
+  width: 200px;
+  color: white;
+  box-shadow: 2px, 5px;
+  border: 2px solid white;
+  height: 46px;
+  border-radius: 23px;
+}
+
+#first-input::placeholder {
+  font-family: 'Mali', cursive;
+  font-weight: 500;
+  
 }
