@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/stars.css">
     <link rel="stylesheet" href="css/score.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buttons.css">
   </head>
   <body>
     <section class="all-stars">
@@ -27,7 +28,7 @@
         <ul class="first-list">
           <li>Você já jogou X vezes.</li>
           <li>Você ganhou X vezes.</li>
-          <li>Você perdeu X vezes.</li>
+          <li>Você perdeu <span id="perdeu"></span> vezes.</li>
         </ul>
       </div>
     </section>
@@ -42,6 +43,7 @@
         <input id="first-input" type="text" placeholder=" Digite um número">
       </div>
       <div class="buttons">
+        <div id="message"></div>
         <button id="btn-play">Jogar</button>
         <button id="btn-reset">Tentar novamente</button>
       </div>

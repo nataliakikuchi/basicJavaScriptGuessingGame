@@ -1,0 +1,13 @@
+#btn-play, #btn-reset {
+  border-radius: 23px;
+  text-align: center;
+  font-family: 'Mali', cursive;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #66c2ff;
+}

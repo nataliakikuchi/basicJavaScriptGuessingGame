@@ -35,16 +35,25 @@ h1 {
 
 #first-input {
   background-color: transparent;
-  width: 200px;
+  width: 300px;
   color: white;
-  box-shadow: 2px, 5px;
   border: 2px solid white;
   height: 46px;
   border-radius: 23px;
+  outline: 0px;
+  margin-bottom: 30px;
 }
 
 #first-input::placeholder {
   font-family: 'Mali', cursive;
   font-weight: 500;
+  font-size: 18px;
+}
 
+#first-input:focus {
+  border: 2px solid #000099;
+}
+
+#message {
+  margin-bottom: 10px;
 }
