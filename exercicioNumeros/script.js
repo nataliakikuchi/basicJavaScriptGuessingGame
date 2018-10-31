@@ -14,6 +14,9 @@
   var numeroDeVezesQuePerdeu = 0;
   atualizaPerdeu();
 
+  var acertos = 0;
+  atualizaAcertos();
+
   function avisaQueNaoEhUmNumero() {
     message.innerHTML = "Insira um número válido para jogar!"
   }
@@ -42,6 +45,11 @@
     vezesQuePerdeu.innerHTML = numeroDeVezesQuePerdeu;
   }
 
+  function atualizaAcertos() {
+    var vezesQueAcertou = document.querySelector("#acertou")
+    vezesQueAcertou.innerHTML = acertos;
+  }
+
   button.addEventListener("click", function(){
     var value = input.value;
 
@@ -55,6 +63,8 @@
       clickDoUsuario = 0;
       input.value = "";
       input.focus();
+      acertos = acertos + 1;
+      atualizaAcertos();
       gerarNovoNumero();
     }else{
       errou();
