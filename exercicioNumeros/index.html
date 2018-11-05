@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/score.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/attempts.css">
   </head>
   <body>
     <section class="all-stars">
@@ -26,7 +27,7 @@
       <div class="score">
         <p>Placar</p>
         <ul class="first-list">
-          <li>Você já jogou X vezes.</li>
+          <li>Você já jogou <span id="jogou"></span> vezes.</li>
           <li>Você ganhou <span id="acertou"></span> vezes.</li>
           <li>Você perdeu <span id="perdeu"></span> vezes.</li>
         </ul>
@@ -46,6 +47,14 @@
         <div id="message"></div>
         <button id="btn-play">Jogar</button>
         <button id="btn-reset">Tentar novamente</button>
+      </div>
+    </section>
+    <section>
+      <div class="attempts">
+        <p>Suas tentativas</p>
+        <ul class="attempts-list">
+          <li><span id="tentou"></span></li>
+        </ul>
       </div>
     </section>
 

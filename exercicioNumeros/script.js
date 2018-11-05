@@ -17,6 +17,9 @@
   var acertos = 0;
   atualizaAcertos();
 
+  var numeroDeVezesQueJogou = 0;
+  vezesJaJogou();
+
   function avisaQueNaoEhUmNumero() {
     message.innerHTML = "Insira um número válido para jogar!"
   }
@@ -34,7 +37,21 @@
     }else{
         message.innerHTML = "Você errou! O número oculto era " + numeroSorteado + "!"
     }
+    tentou();
   }
+
+  function tentou() {
+    var numeroQueTentou = document.querySelector("#tentou");
+    if(input.value !== numeroSorteado){
+    numeroQueTentou.innerHTML = "Você tentou o número " + input.value + ".";
+  }
+    }
+
+  function vezesJaJogou() {
+    var quantasVezesJogou = document.querySelector("#jogou");
+      quantasVezesJogou.innerHTML = numeroDeVezesQueJogou;
+   }
+
 
   function gerarNovoNumero() {
     numeroSorteado = Math.round(Math.random() * 10);
@@ -43,11 +60,15 @@
   function atualizaPerdeu() {
     var vezesQuePerdeu = document.querySelector("#perdeu");
     vezesQuePerdeu.innerHTML = numeroDeVezesQuePerdeu;
+    numeroDeVezesQueJogou = numeroDeVezesQueJogou + 1;
+    vezesJaJogou();
   }
 
   function atualizaAcertos() {
     var vezesQueAcertou = document.querySelector("#acertou")
     vezesQueAcertou.innerHTML = acertos;
+    numeroDeVezesQueJogou = numeroDeVezesQueJogou + 1;
+    vezesJaJogou();
   }
 
   button.addEventListener("click", function(){

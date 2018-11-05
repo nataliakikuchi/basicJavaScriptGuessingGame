@@ -1,0 +1,14 @@
+.attempts {
+  margin-top: 40px;
+}
+
+.attempts p {
+  margin-left: 70px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.attempts-list {
+  list-style-type: none;
+}
