@@ -3,7 +3,7 @@
   var numeroSorteado = Math.round(Math.random() * 10);
 
   var input = document.querySelector("#first-input");
-  console.dir(input.value);
+
 
   var button = document.querySelector("#btn-play");
   var regraDeContagem = 3;
@@ -93,7 +93,6 @@
       input.focus();
     }
 
-    console.log(clickDoUsuario);
     if(clickDoUsuario >= 3){
       button.disabled = true;
       input.disabled = true;
