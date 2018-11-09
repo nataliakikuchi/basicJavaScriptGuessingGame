@@ -17,6 +17,7 @@
   var acertos = 0;
   atualizaAcertos();
 
+  
   var numeroDeVezesQueJogou = 0;
   vezesJaJogou();
 

@@ -9,3 +9,4 @@ const interface = (function() {
     insertMessage: insertMessage,
   }
 })();
+

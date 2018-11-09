@@ -11,3 +11,4 @@ const rules = (function() {
     isValidNumber: isValidNumber,
   }
 })();
+
