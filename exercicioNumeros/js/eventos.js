@@ -1,9 +1,9 @@
 const events = (function() {
   const button = document.querySelector("#btn-play");
 
-  function listenPlayButton(funcao) {
+  function listenPlayButton(onClickPlay) {
     button.addEventListener("click", function(){
-      funcao();
+      onClickPlay();
     });
   }
 
@@ -28,4 +28,6 @@ const events = (function() {
 //   asdsadas
 // }
 
-// listenPlayButton(a, b)
+// listenPlayButton(a, function(){
+//   dasdsadas
+// })
