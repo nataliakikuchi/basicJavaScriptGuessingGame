@@ -7,5 +7,9 @@ const game = (function() {
         const inputValue = input.value;
         const result = rules.isValidNumber(inputValue);
         console.log(result);
+        if(result == false) {
+            messageField.innerHTML = 
+        }
+
     });
 })();
